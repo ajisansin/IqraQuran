@@ -37,6 +37,15 @@
                         android:layout_height="match_parent"
                         android:background="@drawable/bg_main">
 
+                        <ImageView
+                            android:id="@+id/ivReminder"
+                            android:layout_width="36dp"
+                            android:layout_height="36dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_margin="10dp"
+                            android:contentDescription="@string/channel_description"
+                            android:src="@drawable/ic_reminder" />
+
                         <TextView
                             android:id="@+id/tvTitle"
                             android:layout_width="wrap_content"
@@ -44,6 +53,7 @@
                             android:layout_alignParentStart="true"
                             android:layout_marginStart="20dp"
                             android:layout_marginTop="50dp"
+                            android:layout_toStartOf="@id/ivReminder"
                             android:text="@{viewModel.quran.nama}"
                             android:textColor="@android:color/white"
                             android:textSize="18sp"

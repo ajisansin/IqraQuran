@@ -1,5 +1,8 @@
 <resources>
     <string name="app_name">Iqra Quran</string>
+    <string name="channel_name">quran_channel</string>
+    <string name="channel_description">quran_reminder</string>
+    <string name="quran_reminder">Remind me to read surah in…</string>
     <string name="rewind">rewind</string>
     <string name="play">play</string>
     <string name="pause">pause</string>

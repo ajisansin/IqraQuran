@@ -43,6 +43,12 @@ class QuranDetailFragment : Fragment() {
         binding.lifecycleOwner = this
         binding.viewModel = viewModel
 
+        binding.ivReminder.setOnClickListener {
+            activity?.let { it1 ->
+                viewModel.quran.value?.let { it2 -> ReminderDialogFragment(it2.nama) }
+                    ?.show(it1.supportFragmentManager, "QuranReminderDialogFragment")
+            }
+        }
 
         binding.rvAyat.addOnScrollListener(object :
             RecyclerView.OnScrollListener() {
